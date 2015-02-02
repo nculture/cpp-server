@@ -1,0 +1,34 @@
+****** c++ server build, python on logic part ******
+
+****** purpose ******
+
+1. server only build once
+2. logic on python
+3. update while running
+4. python on controlling 
+
+****** advantage ******
+
+1. reduce time on building server
+2. easy to hot update
+
+****** shortcoming ******
+
+1. efficiency down
+
+****** end ******
+
+------ road to dive ------
+
+1. build server by c++
+2. combine pyscript with server
+
+------ end ------
+
+****** server parting ******
+
+1. build event_dispatcher
+2. endpoint, network ...
+3. (timer)
+
+****** end ******

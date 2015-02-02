@@ -1,0 +1,18 @@
+**** shareptr trying
+
+try RefCountaPtr returned with
+	std::tr1::shared_ptr or
+	SmartPointerPtr implement
+
+see what happended
+
+---- result
+
+1. class inherit(:) RefCountable
+
+	both shared_ptr or SmartPointerPtr can reach
+
+2. class not inherit(:) RefCountable
+
+	shared_ptr still can pass,
+	SmartPointerPtr must base on RefCountable

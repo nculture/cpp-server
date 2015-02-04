@@ -1,3 +1,8 @@
+//
+//	shareptr.cpp
+//	purpose
+//
+
 **** shareptr trying
 
 try RefCountaPtr returned with
@@ -16,3 +21,41 @@ see what happended
 
 	shared_ptr still can pass,
 	SmartPointerPtr must base on RefCountable
+
+
+//
+//	simplePyTry.cpp
+//	try base usage with pyton
+//
+
+**** python invoke by c++ Try
+
+try basic usage with python, eg:
+
+	1. Py_Initialize()
+	2. Py_IsInitialized()
+	3. Py_Finalize()
+	4. PyRun_SimpleString(const char* command)
+	5. ...
+
+---- result
+
+Problems:
+
+	1. python build. only python27_d can work...
+	2. Py_Finalize() error
+
+result:
+
+	1. build debug or release version program
+	   need corresponding version of python lib, dll
+	2. while the program ending, report error,
+	   deal after commenting the Py_DECREF
+	   still digging in
+
+	2015-2-3
+
+	get rid of all Py_DECREF, error disappeared.
+	but still need to dig out why.
+
+	2015-2-4
